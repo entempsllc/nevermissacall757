@@ -80,6 +80,7 @@ nav .btn{min-height:44px;padding:0 18px;font-size:15px}
 .plan li{display:flex;gap:10px;align-items:flex-start}
 .plan li svg{flex-shrink:0;margin-top:3px}
 .plan .btn{margin-top:auto}
+.plan-alt{text-align:center;font-size:14px;font-weight:600;color:inherit;opacity:.8}
 .plan .sub{font-size:15px;color:var(--ink2)}.plan.hot .sub{color:#c9cec9}
 .center{text-align:center}
 .guar{max-width:760px;margin:32px auto 0;text-align:center;font-size:16px;color:var(--ink2)}
@@ -190,14 +191,16 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
    <div class="price"><span class="amt">$297</span><span>/month</span></div>
    <div class="sub">Catch every lead and build your reviews.</div>
    <ul id="starter"></ul>
-   <a class="btn btn-outline" data-link="booking" href="#">Start with Starter</a>
+   <a class="btn btn-outline" data-link="payment" href="#">Start with Starter</a>
+   <a class="plan-alt" data-link="booking" href="#">Or book a free call first</a>
   </div>
   <div class="plan hot">
    <div class="name">Growth <span class="pill">Most popular</span></div>
    <div class="price"><span class="amt">$497</span><span>/month</span></div>
    <div class="sub">Everything in Starter, plus 24/7 booking and follow-up.</div>
    <ul id="growth"></ul>
-   <a class="btn btn-gold" data-link="booking" href="#">Get Growth</a>
+   <a class="btn btn-gold" data-link="growth" href="#">Get Growth</a>
+   <a class="plan-alt" data-link="booking" href="#">Or book a free call first</a>
   </div>
  </div>
  <p class="guar"><strong>Our guarantee:</strong> if your missed-call text-back and review requests aren't running within <span data-fill="guaranteeDays"></span> business days of carrier texting approval, we refund your first month in full.</p>
@@ -227,7 +230,8 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
 /* ===== EDIT THESE 7 VALUES, THEN DEPLOY ===== */
 const CONFIG = {
   bookingLink:  "https://calendly.com/entempsllc/free-15-min-missed-lead-review",   // free Calendly or Google Calendar appointment page
-  paymentLink:  "https://buy.stripe.com/YOUR-LINK",        // Stripe subscription link for the founding monthly plan
+  paymentLink:  "https://buy.stripe.com/YOUR-LINK",        // Stripe subscription link: Starter $297/mo
+  growthLink:   "https://buy.stripe.com/YOUR-LINK",        // Stripe subscription link: Growth $497/mo
   phone:        "(757) 453-5527",
   email:        "entempsllc@gmail.com",
   spotsLeft:    "3",
@@ -266,7 +270,8 @@ if (isPlaceholder(CONFIG.phone)) {
 }
 const links = {
  booking: isPlaceholder(CONFIG.bookingLink) ? mailFallback : CONFIG.bookingLink,
- payment: isPlaceholder(CONFIG.paymentLink) ? mailFallback : CONFIG.paymentLink,
+ payment: isPlaceholder(CONFIG.paymentLink) ? CONFIG.bookingLink : CONFIG.paymentLink,
+ growth: isPlaceholder(CONFIG.growthLink) ? CONFIG.bookingLink : CONFIG.growthLink,
  tel: 'tel:' + CONFIG.phone.replace(/[^\d+]/g,''),
  email: 'mailto:' + CONFIG.email + '?subject=Free%20audit'
 };
