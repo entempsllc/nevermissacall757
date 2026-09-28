@@ -348,7 +348,8 @@ function finish(){
     'Avg job value': '$' + d.avg_job_value, 'Booking rate': d.close_rate_pct + '%',
     'Online reply speed': d.response, 'Quote follow-up': d.followup,
     'Their reviews': d.your_reviews, 'Their rating': d.your_rating, 'Competitor reviews': d.competitor_reviews, 'Asks for reviews': d.askreview,
-    'Top gaps': r.gaps.map(g => g.t).join(' | ')
+    'Top gaps': r.gaps.map(g => g.t).join(' | '),
+    Source: new URLSearchParams(location.search).get('utm_source') || document.referrer || 'direct'
   };
   fetch('https://formsubmit.co/ajax/' + CONFIG.formId, {
     method:'POST', headers:{'Content-Type':'application/json','Accept':'application/json'}, body: JSON.stringify(payload)
