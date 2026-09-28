@@ -220,7 +220,8 @@ input[type=range]{flex:1;accent-color:var(--accent);min-height:44px}
 <script>
 /* ===== EDIT THESE VALUES ===== */
 const CONFIG = {
-  leadEmail:    "entempsllc@gmail.com",               // where audit results are emailed (via FormSubmit)
+  leadEmail:    "entempsllc@gmail.com",               // shown in mailto fallback links
+  formId:       "0e4117f7c5818648cb3d86261f630361",   // FormSubmit form ID (hides your email from bots)
   bookingLink:  "https://calendly.com/YOUR-LINK/15min",
   paymentLink:  "https://buy.stripe.com/YOUR-LINK",
   phone:        "(757) 453-5527",
@@ -345,7 +346,7 @@ function finish(){
     'Their reviews': d.your_reviews, 'Their rating': d.your_rating, 'Competitor reviews': d.competitor_reviews, 'Asks for reviews': d.askreview,
     'Top gaps': r.gaps.map(g => g.t).join(' | ')
   };
-  fetch('https://formsubmit.co/ajax/' + CONFIG.leadEmail, {
+  fetch('https://formsubmit.co/ajax/' + CONFIG.formId, {
     method:'POST', headers:{'Content-Type':'application/json','Accept':'application/json'}, body: JSON.stringify(payload)
   }).catch(() => {});
 }
