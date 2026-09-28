@@ -168,7 +168,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
    <div class="eyebrow">Founding client offer</div>
    <h2>Get in early at a locked-in rate.</h2>
    <p>We're taking a small number of founding clients in Hampton Roads. You get Starter for <strong><span data-fill="foundingPrice"></span>/month for your first 3 months</strong> (normally $297) in exchange for honest feedback and a short testimonial once you see results.</p>
-   <p style="margin-bottom:18px">Setup fee: <strong data-fill="setupFee"></strong>, paid once.</p>
+   <p style="margin-bottom:18px"><strong>$0 down.</strong> No setup fee: your first monthly payment starts the build.</p>
    <div class="cta-row">
     <a class="btn btn-primary" data-link="payment" href="#">Claim a founding spot</a>
     <a class="btn btn-outline" data-link="booking" href="#">Talk first</a>
@@ -183,7 +183,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
 </div></section>
 
 <section id="pricing" class="pricing"><div class="wrap">
- <div class="sec-h center" style="margin-left:auto;margin-right:auto"><h2>Simple pricing</h2><p>One-time setup: <span data-fill="setupFee"></span>. Month-to-month. Cancel anytime.</p></div>
+ <div class="sec-h center" style="margin-left:auto;margin-right:auto"><h2>Simple pricing</h2><p>$0 down, no setup fee. Month-to-month. Cancel anytime.</p></div>
  <div class="plans">
   <div class="plan">
    <div class="name">Starter</div>
@@ -200,7 +200,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
    <a class="btn btn-gold" data-link="booking" href="#">Get Growth</a>
   </div>
  </div>
- <p class="guar"><strong>Our guarantee:</strong> if your missed-call text-back and review requests aren't running within <span data-fill="guaranteeDays"></span> business days of carrier texting approval, we refund your setup fee in full.</p>
+ <p class="guar"><strong>Our guarantee:</strong> if your missed-call text-back and review requests aren't running within <span data-fill="guaranteeDays"></span> business days of carrier texting approval, we refund your first month in full.</p>
 </div></section>
 
 <section id="faq"><div class="wrap faq">
@@ -227,10 +227,9 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
 /* ===== EDIT THESE 7 VALUES, THEN DEPLOY ===== */
 const CONFIG = {
   bookingLink:  "https://calendly.com/entempsllc/free-15-min-missed-lead-review",   // free Calendly or Google Calendar appointment page
-  paymentLink:  "https://buy.stripe.com/YOUR-LINK",        // Stripe or Square payment link for the setup fee
+  paymentLink:  "https://buy.stripe.com/YOUR-LINK",        // Stripe subscription link for the founding monthly plan
   phone:        "(757) 453-5527",
   email:        "entempsllc@gmail.com",
-  setupFee:     "$500",
   foundingPrice:"$197",
   spotsLeft:    "3",
   guaranteeDays:"10"
@@ -251,9 +250,9 @@ const growth = ["AI web chat + online booking","Lead nurture follow-ups","Quote 
 const faqs = [
  ["Do I need to change my phone number?","No. We set up a local line that forwards to your current phone, so nothing changes for your customers."],
  ["How long does setup take?","Most of it is done within a week. Business texting needs a one-time carrier approval, which can take a few days to a few weeks; we handle the paperwork."],
- ["Is there a contract?","No long-term contract. Month-to-month after the one-time setup fee."],
+ ["Is there a contract?","No contract and no setup fee. Month-to-month; cancel anytime."],
  ["Who is this for?","Local service businesses in Hampton Roads: junk removal, contractors, cleaners, landscapers, HVAC, plumbing and similar trades."],
- ["What does the free audit include?","We call your business after hours, compare your Google reviews to your top two competitors, and test how fast your website responds. You get the results either way."]
+ ["What does the free audit include?","It's a 2-minute self-serve quiz. You get a Missed-Lead Score, an estimate of what missed calls, slow replies and thin reviews cost you each month, and your top fixes, emailed to you. No call required."]
 ];
 document.getElementById('features').innerHTML = features.map(([t,d]) => `<div class="feat"><div class="ic">${check('#0f5d4e')}</div><h3>${t}</h3><p>${d}</p></div>`).join('');
 document.getElementById('starter').innerHTML = starter.map(s => `<li>${check('#0f5d4e')}<span>${s}</span></li>`).join('');
