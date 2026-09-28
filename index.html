@@ -260,9 +260,15 @@ document.getElementById('starter').innerHTML = starter.map(s => `<li>${check('#0
 document.getElementById('growth').innerHTML = growth.map(s => `<li>${check('#f0c77a')}<span>${s}</span></li>`).join('');
 document.getElementById('faqs').innerHTML = faqs.map(([q,a]) => `<details><summary>${q}</summary><p>${a}</p></details>`).join('');
 document.querySelectorAll('[data-fill]').forEach(el => el.textContent = CONFIG[el.dataset.fill] ?? '');
+const isPlaceholder = v => !v || /YOUR-LINK|000-0000/.test(v);
+const mailFallback = 'mailto:' + CONFIG.email + '?subject=Free%20audit%20request';
+if (isPlaceholder(CONFIG.phone)) {
+ document.querySelectorAll('[data-link="tel"]').forEach(a => { const s = a.nextSibling; a.remove(); if (s && s.nodeType === 3) s.textContent = s.textContent.replace(/^\s*·\s*/, ''); });
+ document.querySelectorAll('.final .fine').forEach(el => el.firstChild.textContent = 'Or email ');
+}
 const links = {
- booking: CONFIG.bookingLink,
- payment: CONFIG.paymentLink,
+ booking: isPlaceholder(CONFIG.bookingLink) ? mailFallback : CONFIG.bookingLink,
+ payment: isPlaceholder(CONFIG.paymentLink) ? mailFallback : CONFIG.paymentLink,
  tel: 'tel:' + CONFIG.phone.replace(/[^\d+]/g,''),
  email: 'mailto:' + CONFIG.email + '?subject=Free%20audit'
 };
