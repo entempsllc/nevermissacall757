@@ -1,0 +1,355 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Free Missed-Lead Audit | Never Miss A Call 757</title>
+<meta name="description" content="2-minute self-audit for Hampton Roads service businesses. See how many jobs missed calls, slow follow-up and thin reviews cost you each month.">
+<link rel="canonical" href="https://nevermissacall757.com/audit/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#1b1f1d;--ink2:#3d4541;--mute:#5b635f;--bg:#f6f3ee;--line:#e2ddd3;--card:#fff;--accent:#0f5d4e;--accent-d:#0a4439;--tint:#e3eeea;--gold:#f0c77a;--brown:#8a5a14;--bad:#a4331c;--warn:#8a5a14;--good:#0f5d4e}
+*{box-sizing:border-box}
+body{margin:0;font-family:'Public Sans',system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.55;-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:'Fraunces',Georgia,serif;line-height:1.12;margin:0}
+a{color:var(--accent)}
+.wrap{max-width:760px;margin:0 auto;padding:0 20px}
+header.top{border-bottom:1px solid var(--line);background:var(--bg)}
+header.top .wrap{max-width:1160px;display:flex;justify-content:space-between;align-items:center;min-height:64px}
+.logo{font-family:'Fraunces',serif;font-weight:700;font-size:20px;color:var(--ink);text-decoration:none}
+.intro{padding:44px 0 20px}
+.eyebrow{font-size:13px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--brown)}
+.intro h1{font-size:clamp(32px,5vw,48px);margin:10px 0 12px}
+.intro p{margin:0;font-size:18px;color:var(--ink2)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:28px;margin:20px 0 60px}
+.progress{height:6px;background:var(--line);border-radius:99px;overflow:hidden;margin-bottom:22px}
+.progress span{display:block;height:100%;background:var(--accent);width:0;transition:width .3s}
+.stepnum{font-size:13px;font-weight:700;color:var(--mute);margin-bottom:6px}
+.step h2{font-size:26px;margin-bottom:18px}
+.step{display:none}.step.on{display:block}
+.field{margin-bottom:20px}
+label.q{display:block;font-weight:700;margin-bottom:8px}
+.hint{font-size:14px;color:var(--mute);margin:-4px 0 8px}
+input[type=text],input[type=email],input[type=tel],input[type=number],select{width:100%;min-height:48px;padding:10px 14px;border:1.5px solid #cfc8ba;border-radius:8px;font:inherit;font-size:16px;background:#fff;color:var(--ink)}
+input:focus,select:focus{outline:3px solid var(--tint);border-color:var(--accent)}
+.opts{display:flex;flex-wrap:wrap;gap:8px}
+.opts label{position:relative}
+.opts input{position:absolute;opacity:0;pointer-events:none}
+.opts span{display:inline-flex;align-items:center;min-height:44px;padding:0 16px;border:1.5px solid #cfc8ba;border-radius:999px;cursor:pointer;font-weight:500;background:#fff}
+.opts input:checked+span{background:var(--accent);border-color:var(--accent);color:#fff}
+.opts input:focus-visible+span{outline:3px solid var(--gold)}
+.range-row{display:flex;align-items:center;gap:14px}
+input[type=range]{flex:1;accent-color:var(--accent);min-height:44px}
+.range-val{min-width:56px;font-weight:700;font-size:18px;text-align:right}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.nav{display:flex;justify-content:space-between;gap:12px;margin-top:8px}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 24px;border-radius:8px;font-weight:700;font-size:17px;text-decoration:none;border:2px solid transparent;cursor:pointer;font-family:inherit}
+.btn-primary{background:var(--accent);color:#fff}.btn-primary:hover{background:var(--accent-d)}
+.btn-ghost{background:transparent;color:var(--ink);border-color:#cfc8ba}
+.btn-gold{background:var(--gold);color:var(--ink)}
+.btn[disabled]{opacity:.6;cursor:wait}
+.err{color:var(--bad);font-size:14px;font-weight:600;margin-top:6px;display:none}
+.privacy{font-size:13px;color:var(--mute);margin-top:10px}
+/* report */
+.score-wrap{display:flex;gap:24px;align-items:center;flex-wrap:wrap;margin-bottom:24px}
+.dial{width:132px;height:132px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-direction:column;border:10px solid var(--line)}
+.dial b{font-family:'Fraunces',serif;font-size:44px;line-height:1}
+.dial small{font-size:13px;color:var(--mute)}
+.money{background:var(--ink);color:var(--bg);border-radius:14px;padding:22px;margin-bottom:22px}
+.money .big{font-family:'Fraunces',serif;font-size:clamp(36px,6vw,52px);font-weight:700;color:var(--gold);line-height:1.05}
+.money p{margin:6px 0 0;color:#c9cec9;font-size:15px}
+.gap{border:1px solid var(--line);border-radius:12px;padding:18px;margin-bottom:12px;display:flex;gap:14px}
+.tag{flex-shrink:0;font-size:12px;font-weight:700;padding:4px 10px;border-radius:999px;height:fit-content;color:#fff}
+.tag.bad{background:var(--bad)}.tag.warn{background:var(--warn)}.tag.good{background:var(--good)}
+.gap h3{font-family:'Public Sans',sans-serif;font-size:17px;margin-bottom:4px}
+.gap p{margin:0;color:var(--ink2);font-size:15px}
+.cta-box{background:var(--tint);border-radius:14px;padding:24px;margin-top:22px;text-align:center}
+.cta-box h3{font-size:24px;margin-bottom:8px}
+.cta-box p{margin:0 0 16px;color:var(--ink2)}
+.cta-box .btns{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
+.assume{font-size:13px;color:var(--mute);margin-top:18px}
+@media (max-width:560px){.row2{grid-template-columns:1fr}.card{padding:20px}}
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap">
+ <a class="logo" href="/">Never Miss A Call <span style="color:var(--accent)">757</span></a>
+ <a href="/" style="font-weight:600;font-size:15px">← Home</a>
+</div></header>
+
+<main class="wrap">
+ <div class="intro" id="intro">
+  <div class="eyebrow">Free · 2 minutes · Instant results</div>
+  <h1>How many jobs are slipping through the cracks?</h1>
+  <p>Answer a few quick questions and get your Missed-Lead Score, an estimate of what it's costing you each month, and the three fixes that matter most.</p>
+ </div>
+
+ <form class="card" id="audit" novalidate>
+  <div class="progress" aria-hidden="true"><span id="bar"></span></div>
+
+  <!-- STEP 1 -->
+  <section class="step on" data-step="1">
+   <div class="stepnum">Step 1 of 5</div>
+   <h2>Your business</h2>
+   <div class="field"><label class="q" for="biz">Business name</label><input type="text" id="biz" name="business" autocomplete="organization" required></div>
+   <div class="row2">
+    <div class="field"><label class="q" for="trade">Trade</label>
+     <select id="trade" name="trade" required>
+      <option value="">Choose one</option>
+      <option>Junk removal / hauling</option><option>General contractor / remodeling</option><option>Roofing</option><option>HVAC</option><option>Plumbing</option><option>Electrical</option><option>Cleaning</option><option>Landscaping / lawn care</option><option>Pressure washing</option><option>Pest control</option><option>Moving</option><option>Auto repair / detailing</option><option>Other</option>
+     </select></div>
+    <div class="field"><label class="q" for="city">City</label>
+     <select id="city" name="city" required>
+      <option value="">Choose one</option>
+      <option>Virginia Beach</option><option>Norfolk</option><option>Chesapeake</option><option>Suffolk</option><option>Portsmouth</option><option>Hampton</option><option>Newport News</option><option>Williamsburg</option><option>Other</option>
+     </select></div>
+   </div>
+  </section>
+
+  <!-- STEP 2 -->
+  <section class="step" data-step="2">
+   <div class="stepnum">Step 2 of 5</div>
+   <h2>Your phone</h2>
+   <div class="field"><label class="q" for="calls">About how many calls do you get per week?</label><input type="number" id="calls" name="calls_per_week" min="1" max="1000" inputmode="numeric" value="20" required></div>
+   <div class="field"><label class="q" for="miss">What share of calls go unanswered?</label>
+    <p class="hint">On a job, driving, after hours, weekends. Be honest, this stays between us.</p>
+    <div class="range-row"><input type="range" id="miss" name="missed_pct" min="0" max="80" step="5" value="30" aria-describedby="missv"><span class="range-val" id="missv">30%</span></div></div>
+   <div class="field"><span class="q" style="display:block;font-weight:700;margin-bottom:8px">When you miss a call, what happens?</span>
+    <div class="opts" role="radiogroup">
+     <label><input type="radio" name="textback" value="auto" required><span>Automatic text goes out</span></label>
+     <label><input type="radio" name="textback" value="manual"><span>I call back when I can</span></label>
+     <label><input type="radio" name="textback" value="none"><span>Voicemail and hope</span></label>
+    </div></div>
+  </section>
+
+  <!-- STEP 3 -->
+  <section class="step" data-step="3">
+   <div class="stepnum">Step 3 of 5</div>
+   <h2>Your jobs</h2>
+   <div class="row2">
+    <div class="field"><label class="q" for="job">Average job value ($)</label><input type="number" id="job" name="avg_job_value" min="1" inputmode="numeric" value="400" required></div>
+    <div class="field"><label class="q" for="close">Of people who reach you, how many book?</label>
+     <div class="range-row"><input type="range" id="close" name="close_rate_pct" min="5" max="90" step="5" value="40"><span class="range-val" id="closev">40%</span></div></div>
+   </div>
+   <div class="field"><span class="q" style="display:block;font-weight:700;margin-bottom:8px">How fast do you reply to website or Facebook inquiries?</span>
+    <div class="opts">
+     <label><input type="radio" name="response" value="5min" required><span>Under 5 min</span></label>
+     <label><input type="radio" name="response" value="1hr"><span>Within an hour</span></label>
+     <label><input type="radio" name="response" value="sameday"><span>Same day</span></label>
+     <label><input type="radio" name="response" value="later"><span>Next day or later</span></label>
+    </div></div>
+   <div class="field"><span class="q" style="display:block;font-weight:700;margin-bottom:8px">Do you follow up on quotes that don't book?</span>
+    <div class="opts">
+     <label><input type="radio" name="followup" value="always" required><span>Every time</span></label>
+     <label><input type="radio" name="followup" value="sometimes"><span>Sometimes</span></label>
+     <label><input type="radio" name="followup" value="never"><span>Rarely / never</span></label>
+    </div></div>
+  </section>
+
+  <!-- STEP 4 -->
+  <section class="step" data-step="4">
+   <div class="stepnum">Step 4 of 5</div>
+   <h2>Your reviews</h2>
+   <p class="hint" style="margin:0 0 16px">Search your business on Google Maps to check. Close is fine.</p>
+   <div class="row2">
+    <div class="field"><label class="q" for="rev">Your Google reviews</label><input type="number" id="rev" name="your_reviews" min="0" inputmode="numeric" required></div>
+    <div class="field"><label class="q" for="stars">Your star rating</label><input type="number" id="stars" name="your_rating" min="1" max="5" step="0.1" inputmode="decimal" placeholder="4.7" required></div>
+   </div>
+   <div class="field"><label class="q" for="comp">Reviews your top competitor has</label><p class="hint">The business that shows up above you on Google Maps.</p><input type="number" id="comp" name="competitor_reviews" min="0" inputmode="numeric" required></div>
+   <div class="field"><span class="q" style="display:block;font-weight:700;margin-bottom:8px">Do you ask customers for a review?</span>
+    <div class="opts">
+     <label><input type="radio" name="askreview" value="auto" required><span>Automatically after every job</span></label>
+     <label><input type="radio" name="askreview" value="sometimes"><span>Sometimes, in person</span></label>
+     <label><input type="radio" name="askreview" value="never"><span>Never</span></label>
+    </div></div>
+  </section>
+
+  <!-- STEP 5 -->
+  <section class="step" data-step="5">
+   <div class="stepnum">Step 5 of 5</div>
+   <h2>Where should we send your report?</h2>
+   <p class="hint" style="margin:0 0 16px">Your results show on the next screen, and we'll email you a copy.</p>
+   <div class="field"><label class="q" for="name">Your name</label><input type="text" id="name" name="name" autocomplete="name" required></div>
+   <div class="row2">
+    <div class="field"><label class="q" for="email">Email</label><input type="email" id="email" name="email" autocomplete="email" required></div>
+    <div class="field"><label class="q" for="phone">Mobile</label><input type="tel" id="phone" name="phone" autocomplete="tel" required></div>
+   </div>
+   <input type="text" name="_honey" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px" aria-hidden="true">
+   <p class="privacy">We'll only use this to send your report and follow up about it. No spam, no selling your info.</p>
+  </section>
+
+  <div class="err" id="err" role="alert">Please answer the questions above to continue.</div>
+  <div class="nav">
+   <button type="button" class="btn btn-ghost" id="back" style="visibility:hidden">Back</button>
+   <button type="button" class="btn btn-primary" id="next">Next</button>
+  </div>
+ </form>
+
+ <!-- REPORT -->
+ <div class="card" id="report" hidden>
+  <div class="eyebrow" id="r-biz"></div>
+  <div class="score-wrap" style="margin-top:12px">
+   <div class="dial" id="dial"><b id="r-score"></b><small>out of 100</small></div>
+   <div style="flex:1;min-width:220px">
+    <h2 id="r-grade" style="font-size:30px;margin-bottom:6px"></h2>
+    <p id="r-summary" style="margin:0;color:var(--ink2)"></p>
+   </div>
+  </div>
+  <div class="money">
+   <div style="font-size:14px;font-weight:600;color:#c9cec9">Estimated revenue slipping away each month</div>
+   <div class="big" id="r-money"></div>
+   <p id="r-money-note"></p>
+  </div>
+  <h3 style="font-size:22px;margin-bottom:12px">Your biggest gaps</h3>
+  <div id="r-gaps"></div>
+  <div class="cta-box">
+   <h3>Want these fixed for you?</h3>
+   <p>We set up missed-call text-back, automatic review requests and lead follow-up for Hampton Roads businesses. Founding clients get a locked-in rate.</p>
+   <div class="btns">
+    <a class="btn btn-primary" data-link="booking" href="#">Book a 15-min call</a>
+    <a class="btn btn-gold" data-link="payment" href="#">Claim a founding spot</a>
+   </div>
+   <p style="margin:14px 0 0;font-size:15px" id="r-call"></p>
+  </div>
+  <p class="assume" id="r-assume"></p>
+ </div>
+</main>
+
+<script>
+/* ===== EDIT THESE VALUES ===== */
+const CONFIG = {
+  leadEmail:    "info.entempsllc@gmail.com",               // where audit results are emailed (via FormSubmit)
+  bookingLink:  "https://calendly.com/YOUR-LINK/15min",
+  paymentLink:  "https://buy.stripe.com/YOUR-LINK",
+  phone:        "(757) 453-5527",
+  // Estimate assumption: share of missed callers who try someone else instead of waiting for you.
+  lostIfNoTextback: 0.6,   // voicemail only
+  lostIfManual:     0.35,  // you call back when you can
+  lostIfAuto:       0.1    // automatic text-back
+};
+/* ============================== */
+
+const $ = id => document.getElementById(id);
+const form = $('audit'), steps = [...form.querySelectorAll('.step')];
+let cur = 0;
+const fmt = n => '$' + Math.round(n).toLocaleString('en-US');
+const isPh = v => !v || /YOUR-LINK|000-0000/.test(v);
+const mailFallback = 'mailto:' + CONFIG.leadEmail + '?subject=Audit%20follow-up';
+
+['miss','close'].forEach(id => { const r = $(id), v = $(id+'v'); const f = () => v.textContent = r.value + '%'; r.addEventListener('input', f); f(); });
+
+function show(i){
+  steps.forEach((s,k) => s.classList.toggle('on', k===i));
+  $('back').style.visibility = i ? 'visible' : 'hidden';
+  $('next').textContent = i === steps.length-1 ? 'See my results' : 'Next';
+  $('bar').style.width = ((i)/steps.length*100) + '%';
+  $('err').style.display = 'none';
+  const first = steps[i].querySelector('input,select'); if (first && i) first.focus({preventScroll:true});
+  window.scrollTo({top: form.offsetTop - 20, behavior:'smooth'});
+}
+function valid(i){
+  const s = steps[i]; let ok = true;
+  s.querySelectorAll('input[required],select[required]').forEach(el => {
+    if (el.type === 'radio') { if (!s.querySelector(`input[name="${el.name}"]:checked`)) ok = false; }
+    else if (!el.checkValidity() || !String(el.value).trim()) ok = false;
+  });
+  return ok;
+}
+$('back').onclick = () => { if (cur) show(--cur); };
+$('next').onclick = () => {
+  if (!valid(cur)) { $('err').style.display = 'block'; return; }
+  if (cur < steps.length-1) return show(++cur);
+  finish();
+};
+
+function compute(d){
+  const calls = +d.calls_per_week, miss = +d.missed_pct/100, job = +d.avg_job_value, close = +d.close_rate_pct/100;
+  const lostShare = d.textback === 'auto' ? CONFIG.lostIfAuto : d.textback === 'manual' ? CONFIG.lostIfManual : CONFIG.lostIfNoTextback;
+  const missedPerMonth = calls * 4.33 * miss;
+  const lostCallers = missedPerMonth * lostShare;
+  const lostJobs = lostCallers * close;
+  const lostRevenue = lostJobs * job;
+
+  let score = 100; const gaps = [];
+  // Phone (40 pts)
+  const phonePts = d.textback === 'auto' ? 0 : d.textback === 'manual' ? 18 : 30;
+  const missPts = Math.min(10, Math.round(miss*25));
+  score -= phonePts + missPts;
+  if (d.textback !== 'auto') gaps.push({lvl: d.textback==='none'?'bad':'warn', pts: phonePts+missPts,
+    t: `About ${Math.round(missedPerMonth)} missed calls a month`,
+    p: d.textback==='none' ? `With voicemail only, most of those callers try the next business on Google. An instant text-back keeps them talking to you.` : `Calling back later works sometimes, but many callers have already booked someone else. An instant text within a minute catches them first.`});
+  // Speed (15 pts)
+  const spPts = {'5min':0,'1hr':5,'sameday':10,'later':15}[d.response];
+  score -= spPts;
+  if (spPts >= 10) gaps.push({lvl: spPts===15?'bad':'warn', pts: spPts, t:'Slow reply to online inquiries', p:'People reaching out online usually contact several businesses at once. An automatic reply with a booking link answers them in seconds.'});
+  // Follow-up (15 pts)
+  const fuPts = {always:0,sometimes:8,never:15}[d.followup];
+  score -= fuPts;
+  if (fuPts) gaps.push({lvl: fuPts===15?'bad':'warn', pts: fuPts, t:'Quotes going cold', p:'Timed follow-up texts on day 2, 5 and 10 bring back quotes that would otherwise disappear, without you having to remember.'});
+  // Reviews (30 pts)
+  const yours = +d.your_reviews, comp = +d.competitor_reviews, stars = +d.your_rating;
+  const ratio = comp > 0 ? yours/comp : 1;
+  let revPts = ratio >= 1 ? 0 : ratio >= .6 ? 8 : ratio >= .3 ? 15 : 22;
+  revPts += {auto:0,sometimes:4,never:8}[d.askreview];
+  if (stars && stars < 4.5) revPts += 4;
+  revPts = Math.min(30, revPts);
+  score -= revPts;
+  if (revPts >= 8) gaps.push({lvl: revPts>=18?'bad':'warn', pts: revPts,
+    t: comp > yours ? `${comp - yours} reviews behind your top competitor` : 'Reviews aren’t being collected consistently',
+    p:'Google weighs review count and freshness when ranking local businesses. A text with your review link after every job builds that steadily.'});
+  score = Math.max(5, Math.min(100, Math.round(score)));
+  gaps.sort((a,b) => b.pts - a.pts);
+  if (!gaps.length) gaps.push({lvl:'good', t:'You’re in good shape', p:'Your basics are covered. The next step is usually a landing page and AI chat to book jobs after hours.'});
+  return {score, gaps: gaps.slice(0,3), lostRevenue, missedPerMonth, lostShare, lostJobs};
+}
+
+function finish(){
+  const d = Object.fromEntries(new FormData(form).entries());
+  if (d._honey) return;
+  const r = compute(d);
+  const grade = r.score >= 80 ? 'Strong' : r.score >= 60 ? 'Leaking leads' : r.score >= 40 ? 'Losing jobs every week' : 'Major leaks';
+  const color = r.score >= 80 ? 'var(--good)' : r.score >= 60 ? 'var(--warn)' : 'var(--bad)';
+
+  $('r-biz').textContent = `${d.business} · ${d.trade} · ${d.city}`;
+  $('r-score').textContent = r.score;
+  $('dial').style.borderColor = color; $('r-score').style.color = color;
+  $('r-grade').textContent = grade;
+  $('r-summary').textContent = r.score >= 80 ? 'You’re ahead of most local businesses. A couple of tweaks could still add jobs.' : 'The good news: every gap below is fixable with automation, without adding work to your day.';
+  $('r-money').textContent = fmt(r.lostRevenue);
+  $('r-money-note').textContent = `Roughly ${r.lostJobs.toFixed(1)} jobs a month from missed calls alone, based on your answers. That’s about ${fmt(r.lostRevenue*12)} a year.`;
+  $('r-gaps').innerHTML = r.gaps.map(g => `<div class="gap"><span class="tag ${g.lvl}">${g.lvl==='bad'?'Fix first':g.lvl==='warn'?'Fix soon':'Good'}</span><div><h3>${g.t}</h3><p>${g.p}</p></div></div>`).join('');
+  $('r-assume').textContent = `How we estimate: your weekly calls × 4.33 weeks × your missed share × the share of missed callers assumed to go elsewhere (${Math.round(r.lostShare*100)}% for your current setup) × your booking rate × your average job value. It’s a rough estimate, not a guarantee.`;
+  $('r-call').innerHTML = isPh(CONFIG.phone) ? '' : `Or call/text <a href="tel:${CONFIG.phone.replace(/[^\d+]/g,'')}">${CONFIG.phone}</a>`;
+  document.querySelectorAll('[data-link]').forEach(a => {
+    const url = a.dataset.link === 'booking' ? CONFIG.bookingLink : CONFIG.paymentLink;
+    a.href = isPh(url) ? mailFallback : url;
+    if (/^https?:/.test(a.href)) { a.target = '_blank'; a.rel = 'noopener'; }
+  });
+
+  form.hidden = true; $('intro').hidden = true; $('report').hidden = false;
+  window.scrollTo({top:0, behavior:'smooth'});
+
+  // Send lead + results to your inbox
+  const payload = {
+    _subject: `New audit: ${d.business} (${d.city}) — score ${r.score}, ${fmt(r.lostRevenue)}/mo`,
+    _template: 'table', _captcha: 'false',
+    _autoresponse: `Thanks ${d.name}! Your Missed-Lead Score for ${d.business}: ${r.score}/100. Estimated revenue slipping away: ${fmt(r.lostRevenue)}/month. Biggest gaps: ${r.gaps.map(g => g.t).join('; ')}. Reply to this email or call ${CONFIG.phone} and we'll walk you through the fixes. — Never Miss A Call 757`,
+    Name: d.name, email: d.email, Phone: d.phone,
+    Business: d.business, Trade: d.trade, City: d.city,
+    Score: r.score, 'Est. lost revenue / month': fmt(r.lostRevenue),
+    'Calls per week': d.calls_per_week, 'Missed %': d.missed_pct + '%', 'Missed-call handling': d.textback,
+    'Avg job value': '$' + d.avg_job_value, 'Booking rate': d.close_rate_pct + '%',
+    'Online reply speed': d.response, 'Quote follow-up': d.followup,
+    'Their reviews': d.your_reviews, 'Their rating': d.your_rating, 'Competitor reviews': d.competitor_reviews, 'Asks for reviews': d.askreview,
+    'Top gaps': r.gaps.map(g => g.t).join(' | ')
+  };
+  fetch('https://formsubmit.co/ajax/' + CONFIG.leadEmail, {
+    method:'POST', headers:{'Content-Type':'application/json','Accept':'application/json'}, body: JSON.stringify(payload)
+  }).catch(() => {});
+}
+show(0);
+</script>
+</body>
+</html>
